@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/charcterstyles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/fonts.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- LOCAL assets -->
+        <script src="D:/stuff/New folder/dev/libs/jquery.js"></script>
+
+        <title>Borderlands 3.5</title>
+        <link rel="icon" type="image/ico" href="img/logo.png" />
+
+    </head>
+
+    <body>
+
+        <!-- BACKGROUND MUSIC & SFX-->
+
+        <audio id="main-menu-bg-music" loop>
+            <source src="music/main-menu-bg-music.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="clicksfx" >
+            <source src="sfx/press.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="hoversfx" >
+            <source src="sfx/hover.wav" type="audio/wav">
+        </audio>
+        <!-- BACKGROUND MUSIC & SFX -->
+      
+        <div class="header" >
+            <h2>(ﾒ￣▽￣)︻┳═一   Choose your Vault Hunter   (ﾒ￣▽￣)︻┳═一</h2> <br>
+        </div>
+
+        <div class="start" onclick="start();">
+            <a>START</a><br>
+        </div>
+
+        <div class="play" onclick="play(this);">
+                <img src="img/play.png" alt="play">
+        </div> 
+        
+        <img src="img/Menu/return.png" alt="return" id="returnbtn">
+
+        <div class="chooseVH" >
+
+            <a id="BM";>
+                <img src="img/Avatar_VH/FL4K.png" alt="Fl4k" id="BM_img" onclick="showinfo('BM')">
+                <div class="pinfo" id="BMinfo">
+                    <h3>Beastmaster</h3>
+                    <p>Works with their animal companions and special <br> skills  to feed on the nightmares of their enemies.</p>
+                </div>
+            </a> <br>
+            
+            <a id="Op">
+                <img src="img/Avatar_VH/Zane.png" alt="Zane" id="Op_img" onclick="showinfo('Op')">
+                <div class="pinfo" id="Opinfo">
+                    <h3>Operative</h3>
+                    <p>Deploys gadgets to control the battlefield through <br> misdirection, spatial manipulation, and a sour <br>disposition.   </p>
+                </div>
+            </a> <br>
+            
+            <a id="Siren">
+                <img src="img/Avatar_VH/Amara.png" alt="Amara" id="Siren_img" onclick="showinfo('Siren')">
+                <div class="pinfo" id="Sireninfo">
+                    <h3>Siren</h3>
+                    <p>Unleashes her elemental Siren powers to hold enemies <br> and pummel them in battle.</p>
+                </div>
+            </a> <br>
+            
+            <a id="Gunner">
+                <img src="img/Avatar_VH/Moze.png" alt="Moze" id="Gunner_img" onclick="showinfo('Gunner')" >
+                    <div class="pinfo" id="Gunnerinfo">
+                        <h3>Gunner</h3>
+                        <p>Summons her Iron Bear battle suit to shield herself <br> while unleashing a salvo of death on her enermies.</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!--  Vault Hunter Cards-->
+        <div class="VHcard" id="Fl4kCard">
+            <h3>FL4K</h3>
+            <img src="img/Avatar_VH/FL4K.png" alt="Hunter">
+        </div>
+
+        <div class="VHcard" id='ZaneCard'>
+            <h3>Zane</h3>
+            <img src="img/Avatar_VH/Zane.png" alt="Hunter">
+        </div>
+        
+        <div class="VHcard" id='AmaraCard'>
+            <h3>Amara</h3>
+            <img src="img/Avatar_VH/Amara.png" alt="Hunter">
+        </div>
+        
+        <div class="VHcard" id='MozeCard'>
+            <h3>Moze</h3>
+            <img src="img/Avatar_VH/Moze.png" alt="Hunter">
+        </div>
+        <!--  Vault Hunter Cards-->
+        
+        
+
+        <!--  Enemy Cards-->
+        <div class="encard" id='BadassMarine'>
+            <h3>Badass Marine</h3>
+            <img src="img/Avatar_Enemy/Badass_Marine.jpg" alt="BadassMarine">
+        </div>
+        
+        <div class="encard" id='BadassPirate'>
+            <h3>Badass Pirate</h3>
+            <img src="img/Avatar_Enemy/Badass_Pirate.jpg" alt="BadassPirate">
+        </div>
+        
+        <div class="encard" id='LilOutlaw'>
+            <h3>Lil Outlaw</h3>
+            <img src="img/Avatar_Enemy/Badass_Lil_Outlaw.jpg" alt="LilOutlaw">
+        </div>
+        
+        <div class="encard" id='BadassMidget'>
+            <h3>Badass Midget</h3>
+            <img src="img/Avatar_Enemy/Midget_Badass.jpg" alt="BadassMidget">
+        </div>
+        
+        <div class="encard" id='hotLoader'>
+            <h3>Hot Loader</h3>
+            <img src="img/Avatar_Enemy/Badass_HOT_Loader.jpg" alt="Badass_HOT_Loader">
+        </div>
+        
+        <div class="encard" id='lillunatic'>
+            <h3>lil lunatic</h3>
+            <img src="img/Avatar_Enemy/badass_lil_lunatic.jpg" alt="badass_lil_lunatic">
+        </div>
+        
+        <div class="encard" id='boneHead'>
+            <h3>Bone Head</h3>
+            <img src="img/Avatar_Enemy/Bone_Head_2.0.jpg" alt="Bone_Head">
+        </div>
+
+        <!--  Enemy Cards-->       
+
+    </body>
+
+    <script src="JS/MenuManager.js"> </script> 
+    <script src="JS/VaultHunter.js"> </script> 
+    <script src="JS/Enemy.js"> </script> 
+
+    <!-- <script src="/__/firebase/7.13.1/firebase-app.js"></script>
+    <script src="/__/firebase/7.13.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script> -->
+
+</html>

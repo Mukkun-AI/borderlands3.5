@@ -1,0 +1,196 @@
+
+/*  VH boxes  */
+#BM {
+    padding: 3px 3px 0 3px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    width: 485px;
+    z-index: 11;
+    top: 146px;
+    left: 290px;
+    visibility: hidden;
+}
+#Op {
+    padding: 3px 3px 0 3px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    width: 485px;
+    z-index: 12;
+    top: 202px;
+    left: 290px;
+    visibility: hidden;
+}
+#Siren {
+    padding: 3px 3px 0 3px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    width: 485px;
+    z-index: 13;
+    top: -144px;
+    right: -580px;
+    visibility: hidden;
+}
+#Gunner {
+    padding: 3px 3px 0 3px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    width: 485px;
+    z-index: 14;
+    top: -88px;
+    right: -580px;
+    visibility: hidden;
+}
+#BMinfo {
+    visibility: hidden;
+}
+#Opinfo {
+    padding: 15px 5px 15px 5px ;
+    visibility: hidden;
+}
+#Sireninfo {
+    position: relative;
+    right: 123px;
+    visibility: hidden;
+}
+#Gunnerinfo {
+    position: relative;
+    right: 123px;
+    visibility: hidden;
+}
+#Siren_img{
+    position: relative;
+    right: -365px;
+}
+#Gunner_img{
+    position: relative;
+    right: -365px;
+}
+
+/* Vault Hunter Stat Cards */
+.VHcard{
+    transition: 0.5s ease-in-out;
+}
+.VHcard h3{
+    width: 200px;
+    height: auto;
+    position:fixed;
+    top: 200px;
+    left: 150px;
+    cursor: default;
+    text-align: right;
+    font: 45px sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px rgb(96, 152, 255);
+    font-family: 'Aqua Grotesque'; 
+    
+}
+.VHcard img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    position:fixed;
+    top: 300px;
+    left: 150px;
+}
+
+#Fl4kCard h3{text-shadow: 4px 3px rgba(0, 168, 65, 0.794);}
+#ZaneCard h3{text-shadow: 4px 3px rgba(204, 150, 0, 0.877);}
+#AmaraCard h3{text-shadow: 4px 3px rgba(168, 3, 190, 0.87);}
+#MozeCard h3{text-shadow: 4px 3px rgba(179, 0, 0, 0.849);}
+
+#Fl4kCard {opacity: 0;}
+#ZaneCard {opacity: 0;}
+#AmaraCard {opacity: 0;}
+#MozeCard {opacity: 0;}
+
+#boneHead h3{text-shadow: 5px 3px rgb(132, 30, 179);}
+#lillunatic h3{text-shadow: 5px 3px rgb(0, 116, 131);}
+#hotLoader h3{text-shadow: 5px 3px rgb(179, 102, 30);}
+#BadassPirate h3{text-shadow: 5px 3px rgb(20, 87, 0);}
+#BadassMarine h3{text-shadow: 5px 3px rgba(13, 33, 100);}
+#BadassMidget h3{text-shadow: 5px 3px rgb(0, 151, 144);}
+#LilOutlaw h3{text-shadow: 5px 3px rgb(8, 102, 209);}
+
+#boneHead {opacity: 0 ;}
+#lillunatic {opacity: 0 ;}
+#hotLoader {opacity: 0 ;}
+#badasspirate { opacity: 0 ;}
+#BadassMarine { opacity: 0 ;}
+#BadassMidget { opacity: 0 ;}
+#LilOutlaw {opacity: 0 ;}
+
+.encard{
+opacity: 0;
+transition: 0.5s ease-in-out;
+display: block;
+position: fixed;
+top: 300px;
+right: 150px;
+z-index: 50;
+}
+.encard h3{
+display: block;
+width: auto;
+height: 35px;
+cursor: default;
+text-align: center;
+background-size: 100%;
+font: 40px sans-serif;
+color: #fff;
+font-family: 'Aqua Grotesque';  
+position: fixed;
+top: 210px;
+right: 150px;
+}
+
+.encard img{
+display: block;
+width: 200px;
+height: 200px;
+}
+
+.chooseVH{
+    position: fixed;
+    top: 140px;  /* 200px */
+    z-index: 50;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.chooseVH a {
+    cursor: default;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.chooseVH h3{
+    margin: 0%;
+    color: rgb(255, 183, 28);
+}
+.chooseVH img{
+    opacity: 0.75;
+    width: 120px;
+    height: 100%;
+    visibility: visible;
+}
+
+.chooseVH img:hover{
+    opacity: 1;
+}
+
+.pinfo {
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align:top;    
+    display: inline-block;
+    height: 90px;
+    width: 350px;
+    background-color: rgb(29, 8, 2);
+    padding: 20px 5px 10px 5px ; 
+    opacity: 0.75;
+}
